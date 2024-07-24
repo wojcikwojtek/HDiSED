@@ -48,19 +48,13 @@ public class PollutionController {
             while ((line = br.readLine()) != null) {
                 String[] tokens = line.split(",");
                 if(tokens[0].equals("No")) { continue; }
-                Long pm25;
-                if(tokens[5].equals("NA")) {
-                    pm25 = 100L;
-                } else {
-                    pm25 = Long.parseLong(tokens[5]);
-                }
                 pollutionRecords.add(new Pollution(
                         Integer.parseInt(tokens[0]),
                         Long.parseLong(tokens[1]),
                         Long.parseLong(tokens[2]),
                         Long.parseLong(tokens[3]),
                         Long.parseLong(tokens[4]),
-                        pm25,
+                        Long.parseLong(tokens[5]),
                         Long.parseLong(tokens[6]),
                         Long.parseLong(tokens[7]),
                         Long.parseLong(tokens[8]),
