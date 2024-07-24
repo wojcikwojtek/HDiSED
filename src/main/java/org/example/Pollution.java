@@ -2,20 +2,21 @@ package org.example;
 
 public class Pollution {
     private int no;
-    private int year;
-    private int month;
-    private int day;
-    private int hour;
-    private int pm25;
-    private int dewp;
-    private int temp;
-    private int pres;
+    private Long year;
+    private Long month;
+    private Long day;
+    private Long hour;
+    private Long pm25;
+    private Long dewp;
+    private Long temp;
+    private Long pres;
     private String cbwd;
     private double lws;
-    private int ls;
-    private int lr;
+    private Long ls;
+    private Long lr;
 
-    public Pollution(int no, int year, int month, int day, int hour, int pm25, int dewp, int temp, int pres, String cbwd, double lws, int ls, int lr) {
+    public Pollution(int no, Long year, Long month, Long day, Long hour, Long pm25, Long dewp,
+                     Long temp, Long pres, String cbwd, double lws, Long ls, Long lr) {
         this.no = no;
         this.year = year;
         this.month = month;
@@ -39,67 +40,67 @@ public class Pollution {
         this.no = no;
     }
 
-    public int getYear() {
+    public Long getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(Long year) {
         this.year = year;
     }
 
-    public int getMonth() {
+    public Long getMonth() {
         return month;
     }
 
-    public void setMonth(int month) {
+    public void setMonth(Long month) {
         this.month = month;
     }
 
-    public int getDay() {
+    public Long getDay() {
         return day;
     }
 
-    public void setDay(int day) {
+    public void setDay(Long day) {
         this.day = day;
     }
 
-    public int getHour() {
+    public Long getHour() {
         return hour;
     }
 
-    public void setHour(int hour) {
+    public void setHour(Long hour) {
         this.hour = hour;
     }
 
-    public int getDewp() {
+    public Long getDewp() {
         return dewp;
     }
 
-    public void setDewp(int dewp) {
+    public void setDewp(Long dewp) {
         this.dewp = dewp;
     }
 
-    public int getPm25() {
+    public Long getPm25() {
         return pm25;
     }
 
-    public void setPm25(int pm25) {
+    public void setPm25(Long pm25) {
         this.pm25 = pm25;
     }
 
-    public int getTemp() {
+    public Long getTemp() {
         return temp;
     }
 
-    public void setTemp(int temp) {
+    public void setTemp(Long temp) {
         this.temp = temp;
     }
 
-    public int getPres() {
+    public Long getPres() {
         return pres;
     }
 
-    public void setPres(int pres) {
+    public void setPres(Long pres) {
         this.pres = pres;
     }
 
@@ -119,19 +120,19 @@ public class Pollution {
         this.cbwd = cbwd;
     }
 
-    public int getLs() {
+    public Long getLs() {
         return ls;
     }
 
-    public void setLs(int ls) {
+    public void setLs(Long ls) {
         this.ls = ls;
     }
 
-    public int getLr() {
+    public Long getLr() {
         return lr;
     }
 
-    public void setLr(int lr) {
+    public void setLr(Long lr) {
         this.lr = lr;
     }
 }
